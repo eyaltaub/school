@@ -25,6 +25,7 @@ def morse_file(file):
             else:
                 return "Error in Morse Code"
         unencrypted = unencrypted + ' '
+    unencrypted = unencrypted[:-1]
     return unencrypted
 
 
