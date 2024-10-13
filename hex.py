@@ -46,8 +46,10 @@ def print_average():
     sum = 0
     num = 0
     enter = input()
-    while is_valid_letter(enter):
-        sum += hex[enter]
+    while hex_to_dec(enter) != "Error: invalid hexadecimal":
+        sum += hex_to_dec(enter)
         num += 1
         enter = input()
     print(sum / num)
+
+print_average()
