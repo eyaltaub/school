@@ -1,6 +1,3 @@
-import re
-
-
 def counter(node, character):
     if node is None:
         return 0
@@ -11,11 +8,6 @@ def counter(node, character):
     count += counter(node.left, character)
     count += counter(node.right, character)
     return count
-
-
-def remove_consecutive_duplicates(s):
-    return re.sub(r'(.)\1+', r'\1', s)
-
 
 def all_in(node, string):
     def values_to_set(node1):
